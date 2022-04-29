@@ -266,9 +266,13 @@ nav.Main-Nav {
     font-size: 20px;
     margin:0 15px !important;
     cursor: pointer;
+    color: var(--bg-color);
+    font-style: normal;
 }
+
 @media(max-width:450px){
     .Addition-Icon{
         display: none;
     }
 }
+

@@ -8,6 +8,8 @@ import Ring7 from '../Assets/Stone-Gallery/Rings/7.jpg'
 import Ring8 from '../Assets/Stone-Gallery/Rings/8.jpg'
 import { useNavigate } from 'react-router'
 import { useState } from 'react/cjs/react.development'
+import { useDispatch } from 'react-redux'
+import { cartSliceAction } from '../../slice/cartSlice'
 
 
 
@@ -18,6 +20,8 @@ const Card = React.memo((props) => {
 
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(3);
+
+    const dispatch=useDispatch();
 
 
     const { count } = props;
@@ -72,6 +76,11 @@ const Card = React.memo((props) => {
     }
     ]
 
+    const handleAddToCart=(item)=>{
+        
+        dispatch(cartSliceAction.addToCart(item));
+    }
+
     useEffect(() => {
         if (count) {
 
@@ -96,7 +105,7 @@ const Card = React.memo((props) => {
                                 <i class="fi fi-rr-heart"></i>
                             </div>
 
-                            <div className='icon-box'>
+                            <div className='icon-box' onClick={()=>handleAddToCart(item)}>
                                 <i class="fi fi-rr-shopping-cart"></i>
                             </div>
 

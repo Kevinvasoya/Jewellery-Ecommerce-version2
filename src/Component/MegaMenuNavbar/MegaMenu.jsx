@@ -3,8 +3,14 @@ import "./MegaMenu.css";
 import NavImg from "../Assets/NavImg.jpg";
 import { NavLink } from "react-router-dom";
 import Logo from '../Assets/logo.png'
-export default class MegaMenu extends Component {
-  render() {
+import { useSelector } from "react-redux";
+
+const MegaMenu=()=>{
+
+  
+  const cart=useSelector((state)=>state.cart.cart);
+  
+
     return (
       <>
         <nav className="Main-Nav">
@@ -129,7 +135,8 @@ export default class MegaMenu extends Component {
               </li>
             </ul>
             <div className="Addition-Icon">
-              <i class="fi fi-rr-shopping-cart-add"></i>
+            <NavLink to="/cart"><i class="fi fi-rr-shopping-cart-add">{cart.length}</i></NavLink>
+              
               <i class="fi fi-rs-heart"></i>
             </div>
             <label htmlFor="button-menu" className="toggle-button-nav button-menu " >
@@ -139,5 +146,8 @@ export default class MegaMenu extends Component {
         </nav>
       </>
     );
-  }
-}
+
+
+} 
+
+export default MegaMenu;

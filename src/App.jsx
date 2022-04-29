@@ -33,7 +33,7 @@ import Cart from './Component/Cart/Cart'
 function App() {
   return (
     <>
-     <Cart/>
+     
       <div className="App">
       
          <Routes>
@@ -50,6 +50,7 @@ function App() {
           <Route path='login-form' element={<Login/>}/>
           <Route path='terms&condition' element={<Term/>}/>
           <Route path='privacy-policy' element={<Policy/>}/>
+          <Route path='cart' element={<Cart/>}/>
           {/* Component */}
 
 
