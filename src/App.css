@@ -16,7 +16,7 @@ font-family: 'Lexend', sans-serif;
   --md-container : 80%;
   --sl-container : 90%;
   --xsl-container:100%;
-  font-family: 'Lexend';
+ 
 
 }
 *{
@@ -25,7 +25,7 @@ font-family: 'Lexend', sans-serif;
   box-sizing: border-box;
   text-decoration: none !important;
   list-style: none;
-  
+  font-family: 'Lexend';
 }
 
 body{

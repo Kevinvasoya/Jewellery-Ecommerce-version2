@@ -1,12 +1,13 @@
 import React from 'react'
 import Footer from '../Component/Footer/Footer'
 import Gallery from '../Component/Image-Gallery/Gallery'
-import Navbar from '../Component/Navbar/Navbar'
+import MegaMenu from '../Component/MegaMenuNavbar/MegaMenu'
+
 
 const ImageGallery = () => {
   return (
     <>
-      <Navbar/>
+      <MegaMenu/>
       <Gallery/>
       <Footer/>
     </>

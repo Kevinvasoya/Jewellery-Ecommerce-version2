@@ -12,7 +12,7 @@ function Pagenotfound(){
        
 
         <div className="tw-Not-Found">
-            <img src={Image404}/>
+            <img loading="lazy" src={Image404}/>
             <h1 className="GotoHomePage" onClick={()=>{Navigate('/')}}>Go Back To Home Page</h1>
         </div>
         

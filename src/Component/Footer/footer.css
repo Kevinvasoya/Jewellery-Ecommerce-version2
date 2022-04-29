@@ -110,13 +110,12 @@
 .footer-content-small{
     display: flex;
     justify-content: flex-start;
-    
     margin: 20px  !important;
     flex-direction: column;
-   
     width: 200px;
-    max-height: 400px;
+    min-height: 280px;
     /* border: 1px solid; */
+    align-items: flex-start;
 }
 .footer-content-small h3{
     height: 50px;

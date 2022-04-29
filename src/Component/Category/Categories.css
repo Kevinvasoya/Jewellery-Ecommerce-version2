@@ -9,7 +9,12 @@
     align-items: center;
 }
 .tw-shopping-head h1{
-    font-size: 70px;
+    font-size: 7.5em;
+}
+@media(max-width:500px){
+    .tw-shopping-head h1{
+        font-size: 3.5em;
+    }
 }
 .tw-shopping-area{
     /* border: 1px solid; */

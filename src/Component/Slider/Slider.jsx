@@ -23,7 +23,7 @@ export default class AutoPlay extends Component {
       <div className="Slider">
         <Slider {...settings}>
           <div className=" Image-Slider" >
-            <img src={Bg1} />
+            <img loading="lazy" src={Bg1} />
             <div className="Slider-Detail">
               <h1>Diamonds Jewellery <br /> Collection</h1>
               <p>Sukra Yogam & Silver Power Silver Saving Schemes.</p>
@@ -31,7 +31,7 @@ export default class AutoPlay extends Component {
             </div>
           </div>
           <div className=" Image-Slider" >
-            <img src={Bg2} />
+            <img loading="lazy" src={Bg2} />
             <div className="Slider-Detail">
               <h1>Diamonds Jewellery <br /> Collection</h1>
               <p>Sukra Yogam & Silver Power Silver Saving Schemes.</p>

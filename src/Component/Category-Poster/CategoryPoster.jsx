@@ -8,28 +8,28 @@ const CategoryPoster = () => {
   return (
     <div className='Poster-Container'>
         <div className='Poster-BoxArea'>
-            <img src={Poster1}/>
+            <img  loading='lazy' src={Poster1}/>
             <div className='Poster-Details'>
               <h2>Earings</h2>
               <p>15 Items</p>
             </div>
         </div>
         <div className='Poster-BoxArea'>
-            <img src={Poster2}/>
+            <img  loading='lazy'src={Poster2}/>
             <div className='Poster-Details'>
               <h2>Bracelates</h2>
               <p>15 Items</p>
             </div>
         </div>
         <div className='Poster-BoxArea'>
-            <img src={Poster3}/>
+            <img loading='lazy' src={Poster3}/>
             <div className='Poster-Details'>
               <h2>Necklace</h2>
               <p>15 Items</p>
             </div>
         </div>
         <div className='Poster-BoxArea'>
-            <img src={Poster4}/>
+            <img  loading='lazy'src={Poster4}/>
             <div className='Poster-Details'>
               <h2>Bangles</h2>
               <p>15 Items</p>

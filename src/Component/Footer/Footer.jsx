@@ -23,7 +23,7 @@ const Footer = () => {
           
             <div className="footer-box-main">
                 <div className="footer-content-big">
-                    <img src={Logo} alt=""/>
+                    <img loading='lazy' src={Logo} alt=""/>
                     <h3>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans tobest</h3>
                 </div>
                 <div className="footer-content-small">
@@ -32,8 +32,8 @@ const Footer = () => {
                         <li><a href="#">My Account</a></li>
                         <li><a onClick={()=>{Navigate('/about-us')}}>About Us</a></li>
                         <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
+                        <li><NavLink to='/privacy-policy'>Privacy Policy</NavLink></li>
+                        <li><NavLink to='/terms&conditions'>Terms & Condition</NavLink></li>
                         <li><a href='#'>Contact Us</a></li>
                         
                     </ul>
@@ -78,22 +78,22 @@ const Footer = () => {
 
             <div className="Pay-Acc">
                 <div className="paycompany">
-                    <img src={card1} alt=""/>
+                    <img  loading='lazy'  src={card1} alt=""/>
                 </div>
                 <div className="paycompany">
-                    <img src={card2} alt=""/>
+                    <img  loading='lazy' src={card2} alt=""/>
                 </div>
                 <div className="paycompany">
-                    <img src={card3} alt=""/>
+                    <img  loading='lazy' src={card3} alt=""/>
                 </div>
                 <div className="paycompany">
-                    <img src={card4} alt=""/>
+                    <img  loading='lazy' src={card4} alt=""/>
                 </div>
                 <div className="paycompany">
-                    <img src={card5} alt=""/>
+                    <img  loading='lazy' src={card5} alt=""/>
                 </div>
                 <div className="paycompany">
-                    <img src={card6} alt=""/>
+                    <img  loading='lazy' src={card6} alt=""/>
                 </div>
                
             </div>

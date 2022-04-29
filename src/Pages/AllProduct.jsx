@@ -1,12 +1,13 @@
 import React from 'react'
 import Categories from '../Component/Category/Categories'
 import Footer from '../Component/Footer/Footer'
-import Navbar from '../Component/Navbar/Navbar'
+import MegaMenu from '../Component/MegaMenuNavbar/MegaMenu'
+
 
 const AllProduct = () => {
   return (
     <>
-        <Navbar/>
+        <MegaMenu/>
         <Categories/>
         <Footer/>
     </>

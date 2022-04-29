@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './card.css'
 import p1 from '../Assets/p1.jpg'
 import p1u from '../Assets/p1u.jpg'
@@ -7,12 +7,21 @@ import Ring5 from '../Assets/Stone-Gallery/Rings/4.jpg'
 import Ring7 from '../Assets/Stone-Gallery/Rings/7.jpg'
 import Ring8 from '../Assets/Stone-Gallery/Rings/8.jpg'
 import { useNavigate } from 'react-router'
+import { useState } from 'react/cjs/react.development'
 
 
 
 
 
-const Card = () => {
+
+const Card = React.memo((props) => {
+
+    const [start, setStart] = useState(0);
+    const [end, setEnd] = useState(3);
+
+
+    const { count } = props;
+
     const Navigate = useNavigate()
     var cardInformation = [{
         id: 1,
@@ -24,7 +33,7 @@ const Card = () => {
     }, {
         id: 2,
         ProductImage: Ring4,
-        UpperImage:Ring5,
+        UpperImage: Ring5,
         Price: '$450.00',
         Product_Name: 'Golden Earings',
         Product_Manf: 'Titan Co'
@@ -37,30 +46,54 @@ const Card = () => {
         Product_Name: 'Golden Earings',
         Product_Manf: 'Titan Co'
     }
-        // ,{
-        //     id: 4,
-        //     ProductImage: p1,
-        //     UpperImage: p1u,
-        //     Price: '$450.00',
-        //     Product_Name: 'Golden Earings',
-        //     Product_Manf: 'Titan Co'
-        // }
+        , {
+        id: 4,
+        ProductImage: p1,
+        UpperImage: p1u,
+        Price: '$450.00',
+        Product_Name: 'Golden Earings',
+        Product_Manf: 'Titan Co'
+    },
+    {
+        id: 5,
+        ProductImage: p1,
+        UpperImage: p1u,
+        Price: '$450.00',
+        Product_Name: 'Golden Earings',
+        Product_Manf: 'Titan Co'
+    }
+        , {
+        id: 6,
+        ProductImage: p1,
+        UpperImage: p1u,
+        Price: '$450.00',
+        Product_Name: 'Golden Earings',
+        Product_Manf: 'Titan Co'
+    }
     ]
+
+    useEffect(() => {
+        if (count) {
+
+            setStart(count.start);
+            setEnd(count.end);
+        }
+    }, [count])
     return (
 
-        cardInformation.map((item) => (
+        cardInformation.slice(start, end).map((item) => (
             <div className='container-card' key={item.id}>
                 <div className='Product-Preview'>
-                    <img src={item.ProductImage} />
+                    <img loading='lazy' src={item.ProductImage} />
                     <div className='Upper-Image'>
-                        <img src={item.UpperImage} />
+                        <img loading='lazy' src={item.UpperImage} />
                         <div className='User-Features'>
                             <div className='icon-box'>
-                                <i class="fi fi-rr-eye" onClick={()=>Navigate('/product-info')}></i>
+                                <i class="fi fi-rr-eye" onClick={() => Navigate('/product-info')}></i>
                             </div>
 
                             <div className='icon-box'>
-                            <i class="fi fi-rr-heart"></i>
+                                <i class="fi fi-rr-heart"></i>
                             </div>
 
                             <div className='icon-box'>
@@ -75,7 +108,7 @@ const Card = () => {
                 </div>
                 <div className='Product-Detail'>
                     <h6>{item.Price}</h6>
-                    <h2 onClick={()=>Navigate('/product-info')}>{item.Product_Name}</h2>
+                    <h2 onClick={() => Navigate('/product-info')}>{item.Product_Name}</h2>
                     <div className='Rating-Manf'>
                         <h6>{item.Product_Manf}</h6>
                     </div>
@@ -88,6 +121,6 @@ const Card = () => {
 
 
 
-}
+})
 
 export default Card

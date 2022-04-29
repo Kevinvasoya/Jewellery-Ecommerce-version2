@@ -1,9 +1,25 @@
 import React, { Component } from 'react'
+
 import Card from '../OurProduct/Card'
 import '../Category/Categories.css'
 
 export default class Categories extends Component {
+
+
+    constructor(){
+        super();
+
+        this.state=({
+            count:{
+                start:0,
+                end:6
+            }
+        })
+    }
+
     componentDidMount() {
+
+
         let openFilterbtn = document.querySelectorAll(' .fa-plus')
         let closeFilterbtn = document.querySelectorAll(' .fa-minus')
         let BtnActiv = document.querySelectorAll('.Btn-Activation')
@@ -173,9 +189,8 @@ export default class Categories extends Component {
 
                             </div>
                             <div className='row Product-Showcast'>
-                                <Card />
-                                <Card />
-                                <Card />
+                                <Card count={this.state.count}/>
+                        
                             </div>
                         </div>
                     </div>

@@ -78,7 +78,7 @@ function Gallery() {
 
                 {(imageGallery.map((galleryItem) =>
                     <div className=' col-xl-3 col-md-4 col-xs-12 column-1'>
-                        <img src={galleryItem.imageGallery} />
+                        <img loading='lazy' src={galleryItem.imageGallery} />
                     </div>
                 ))}
             </div>

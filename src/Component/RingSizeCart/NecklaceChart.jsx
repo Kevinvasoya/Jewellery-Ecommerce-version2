@@ -1,15 +1,16 @@
 import React from 'react'
 import './SizeChart.css'
 import NecklaceSize from '../Assets/Stone-Gallery/Charts/NecklaceSize.png'
-import Navbar from '../Navbar/Navbar'
+
 import Footer from '../Footer/Footer'
+import MegaMenu from '../MegaMenuNavbar/MegaMenu'
 const NecklaceChart = () => {
   return (
     <>
-      <Navbar/>
+      <MegaMenu/>
         <h1 className='Size-Header'>Necklace Size Chart</h1>
         <div className='Size-Image'>
-          <img src={NecklaceSize} />
+          <img  loading='lazy' src={NecklaceSize} />
         </div>
       <Footer/>
     </>

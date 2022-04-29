@@ -83,7 +83,7 @@ const Gemstone = () => {
         { availableGems.map((itemofGems) =>(
 
           <div className='Gems-Card' key={itemofGems.Id}>
-            <img src={itemofGems.GemstoneImage} />
+            <img loading='lazy' src={itemofGems.GemstoneImage} />
             <div className='GemsName'>
               <h2>{itemofGems.GemstoneName}</h2></div>
           </div>

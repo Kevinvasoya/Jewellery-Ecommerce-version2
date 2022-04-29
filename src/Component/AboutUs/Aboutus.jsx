@@ -9,7 +9,7 @@ const Aboutus = () => {
     <>
       <h1 className='Bigger-Title'>About Us</h1>
       <div className='container tw-About-Image'>
-        <img src={aboutimg} />
+        <img loading='lazy' src={aboutimg} />
       </div>
       <div className='container tw-About-Us'>
         <div className='col-lg-12 as-we-use'>
@@ -46,17 +46,17 @@ const Aboutus = () => {
         <div className='row container Features-Box'>
 
           <div className='col-xs-9 col-sm-7 col-md-3 col-lg-3  Features'>
-            <img src={creative} />
+            <img loading='lazy' src={creative} />
             <h5>Creative Design</h5>
             <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
           </div>
           <div className='col-xs-9  col-sm-7 col-md-3 col-lg-3  Features'>
-            <img src={money} />
+            <img loading='lazy' src={money} />
             <h5>100% Money Back Guarantee</h5>
             <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
           </div>
           <div className='col-xs-9 col-sm-7  col-md-3 col-lg-3   Features'>
-            <img src={support} />
+            <img loading='lazy' src={support} />
             <h5>Online Support 24/7</h5>
             <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
           </div>

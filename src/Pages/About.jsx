@@ -1,14 +1,15 @@
 import React from 'react'
-import Navbar from '../Component/Navbar/Navbar'
 import Footer from '../Component/Footer/Footer'
 import AboutUs from '../Component/AboutUs/Aboutus'
+import Testimonial from '../Component/Testimonials/Testimonial'
+import MegaMenu from '../Component/MegaMenuNavbar/MegaMenu'
  const About =()=> {
   return (
     <>
-    <Navbar/>
+    <MegaMenu/>
     <AboutUs/>
+    <Testimonial/>
     <Footer/>
-
     </>
   )
 }

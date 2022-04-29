@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 import React from 'react'
 import './App.css'
-import Navbar from './Component/Navbar/Navbar'
 import Slider from './Component/Slider/Slider'
 import ProductDisplay from './Component/Product-Display/ProductDisplay'
 import Arrival from './Component/Arrival/Arrival'
@@ -23,27 +22,37 @@ import NecklaceChart from './Component/RingSizeCart/NecklaceChart'
 import RingChart from './Component/RingSizeCart/RingChart'
 import StoneGallery from './Pages/StoneGallery'
 import AllProduct from './Pages/AllProduct'
-
+import MegaMenu from './Component/MegaMenuNavbar/MegaMenu'
+import ContactUs from './Component/Contact-Us/ContactUs'
+import Login from './Component/Login/Login'
+import Term from './Component/Terms-Condition/Term'
+import Policy from './Component/Terms-Condition/Policy'
+import Cart from './Component/Cart/Cart'
 
 
 function App() {
   return (
     <>
+     <Cart/>
       <div className="App">
-        <Routes>
+      
+         <Routes>
           {/* Pages */}
-          <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
+          <Route path='contact-us' element={<ContactUs/>}/> 
           <Route path='about-us' element={<About />} />
           <Route path='image-gallery' element={<ImageGallery/>}/>
           <Route path='product-info' element={<ProductInfo/>}/>
           <Route path='gemstone-gallery' element={<StoneGallery/>}/>
           <Route path='products' element={<AllProduct/>}/>
           <Route path='ringchart' element={<RingChart/>}/>
-          <Route path='necklacechart' element={<NecklaceChart/>}/>
-
+          <Route path='necklacechart' element={<NecklaceChart/>}/> 
+          <Route path='login-form' element={<Login/>}/>
+          <Route path='terms&condition' element={<Term/>}/>
+          <Route path='privacy-policy' element={<Policy/>}/>
           {/* Component */}
 
-          <Route path='navbar' element={<Navbar />} />
+
           <Route path='Aboutus' element={<Aboutus />} />
           <Route path='ourproduct' element={<OurProduct />} />
           <Route path='slider' element={<Slider />} />
@@ -53,15 +62,10 @@ function App() {
           <Route path='footer' element={<Footer />} />
           <Route path='productdisplay' element={<ProductDisplay />} />
           <Route path='testimonial' element={<Testimonial />} />
-
+          <Route path='megaMenu' element={<MegaMenu/>}/>
           <Route path='*' element={<Pagenotfound />} />
-        </Routes>
-        {/* 
-        <Categories/>
-        <Gemstone/>
-        <NecklaceChart/>
-        <RingChart/> */}
-      </div>
+        </Routes> 
+        </div>
     </>
   )
 }

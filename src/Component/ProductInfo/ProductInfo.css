@@ -193,9 +193,9 @@
     color: var(--th-color);
 }
 
-.Tab-Content{
+/* .Tab-Content{
     display: none;
-}
+} */
 .Tab-Content.is-active{
     display: flex;
 }

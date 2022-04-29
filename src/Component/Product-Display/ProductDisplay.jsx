@@ -61,7 +61,7 @@ const ProductDisplay = () => {
         <div id='tw-ProductDisplay'>
 
           <div className='tw-DisplayCard'>
-            <img src={displaycard1} />
+            <img loading='lazy' src={displaycard1} />
             <div className='tw-DisplayCard-Info'>
               <p>Beautiful</p>
               <h1>Wedding <br/>Rings</h1>
@@ -70,7 +70,7 @@ const ProductDisplay = () => {
           </div>
 
           <div className='tw-DisplayCard'>
-            <img src={displaycard2} />
+            <img loading='lazy' src={displaycard2} />
             <div className='tw-DisplayCard-Info'>
               <p>Beautiful</p>
               <h1>Wedding <br/>Rings</h1>
@@ -79,7 +79,7 @@ const ProductDisplay = () => {
           </div>
           
           <div className='tw-DisplayCard'>
-            <img src={displaycard3} />
+            <img loading='lazy' src={displaycard3} />
             <div className='tw-DisplayCard-Info'>
               <p>Earings</p>
               <h1>Tangerine Floral Earring</h1>
@@ -88,7 +88,7 @@ const ProductDisplay = () => {
           </div>
 
           <div className='tw-DisplayCard'>
-            <img src={displaycard4} />
+            <img loading='lazy' src={displaycard4} />
             <div className='tw-DisplayCard-Info'>
               <p>Beautiful</p>
               <h1>Wedding <br/>Rings</h1>
