@@ -55,24 +55,24 @@ const Card = React.memo((props) => {
     }
         , {
         id: 4,
-        ProductImage: p1,
-        UpperImage: p1u,
+        ProductImage: p1u,
+        UpperImage: p1,
         Price: '$450.00',
         Product_Name: 'Golden Earings',
         Product_Manf: 'Titan Co'
     },
     {
         id: 5,
-        ProductImage: p1,
-        UpperImage: p1u,
+        ProductImage: Ring8,
+        UpperImage: p1,
         Price: '$450.00',
         Product_Name: 'Golden Earings',
         Product_Manf: 'Titan Co'
     }
         , {
         id: 6,
-        ProductImage: p1,
-        UpperImage: p1u,
+        ProductImage: Ring5,
+        UpperImage: Ring4,
         Price: '$450.00',
         Product_Name: 'Golden Earings',
         Product_Manf: 'Titan Co'
