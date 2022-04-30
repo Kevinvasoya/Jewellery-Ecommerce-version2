@@ -16,7 +16,10 @@ import { cartSliceAction } from '../../slice/cartSlice'
 
 
 
+
 const Card = React.memo((props) => {
+
+      
 
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(3);
@@ -91,7 +94,7 @@ const Card = React.memo((props) => {
     return (
 
         cardInformation.slice(start, end).map((item) => (
-            <div className='container-card' key={item.id}>
+            <div className='container-card' key={item.id} data-aos="fade-up">
                 <div className='Product-Preview'>
                     <img loading='lazy' src={item.ProductImage} />
                     <div className='Upper-Image'>
